@@ -2,7 +2,7 @@
 
  :root{
     --main-color:#8b658b;
-    --black-color:#222222;
+    --black-color:#757575;
     --border:0.1rem solid rgba(255, 254, 254, 0.329);
  }
 *{
@@ -29,18 +29,21 @@ body{
     height: 200vh;
 }
 /*! header start */
+section{
+    padding:6rem 7%;
+}
 
 .header .logo > img{
     height: 7rem;
 }
 
 .header{
-    background-color: white;
+    background-color:black;
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding:0 5%;
-    margin:2rem 5%;
+    padding:0 7%;
+    margin:2rem 7%;
    border-radius: 30rem; 
    box-shadow: 0px 0px 17px -2px rgba(255, 254, 254, 0.092);
    position: sticky;
@@ -61,9 +64,42 @@ body{
 cursor:pointer;
 font-size:2.5rem;
 background-color: transparent;
+color:#fff ;
 }
 /*! header end */
 
 /*! Home start */
-
+.home{
+    min-height:100vh;
+    background: url(img/BS.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -12rem;
+    display:flex;
+    align-items: center;
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size:5rem;
+    color: azure;
+}
+.home .content p{
+    font-size:3rem;
+    font-weight: 300;
+    color:#b3a7a7;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:2rem 3.75rem;
+    border-radius:30rem;
+    font-size:1.7rem;
+    color:azure;
+    background-color: black;
+    cursor: pointer;
+}
 /*! Home end */
