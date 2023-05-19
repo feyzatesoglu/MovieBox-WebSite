@@ -10,16 +10,16 @@
   </head>
   <body>
     <!-- Header section start -->
-    <header class="header">
+    <header class="header" id="header">
         <a href="#" class="logo">
             <img src="img/logo.png" alt="logo">
         </a>
         <nav class="navbar">
-          <a href="#" class="active">Home</a>
+          <a href="#header" class="active">Home</a>
             <a href="#" class="page-sign">Sign in</a>
-            <a href="#" class="page-createacc">Create account</a>
-            <a href="#">Films</a>
-            <a href="#">Contact</a>
+            <a href="#movies" id="movie">Movies</a>
+            <a href="#review">Reviews</a>
+            <a href="#contact">Contact</a>
         </nav>
         <div class="search-form">
           <input type="text" class="search-input" id="search-box" placeholder="search here">
@@ -91,9 +91,9 @@
           </form>
         </div>
        </div>
-<div class="content">
+<div class="content" id="content">
   <h3>Discover top-rated movies! Comment on the movies you've watched and help members choose movies!</h3>
-    <p>The social network for film lovers.</p>
+    <p>The social network for movie lovers.</p>
     <a href="#" class="btn">GET STARTED</a>
 </div>
     </section>
@@ -127,51 +127,111 @@
       <h3 class="heading">Films with thumbs up from critics</h3>
       <div class="box-container">
         <div class="box">
-          <img src="img/thegodfather.jpg">
+          <img src="img/thegodfather.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/awakenings.jpg">
+          <img src="img/awakenings.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/the-dark-knight.jpg">
+          <img src="img/the-dark-knight.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/the-shawshank-redemp.jpg">
+          <img src="img/the-shawshank-redemp.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/fight-club.jpg">
+          <img src="img/fight-club.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/the-lord-of-rings.jpg">
+          <img src="img/the-lord-of-rings.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/pulp-fiction.jpg">
+          <img src="img/pulp-fiction.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/the-good-bad-ugly.jpg">
+          <img src="img/the-good-bad-ugly.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/12-Angry-Men.jpg">
+          <img src="img/12-Angry-Men.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/lord-rings-2.jpg">
+          <img src="img/lord-rings-2.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/inception.jpg">
+          <img src="img/inception.jpg" alt="movie">
         </div>
         <div class="box">
-          <img src="img/forrest-gump.jpg">
+          <img src="img/forrest-gump.jpg" alt="movie">
         </div>
 
       </div>
     </section>
      <!-- Films with thumbs up from critics end-->
 
-     <!-- Review section start -->
-    <section class="review">
-      <h3 class="heading">Popular Reviews</h3>
+     <section class="movies" id="movies">
+      <h3 class="heading">Movies</h3>
       <div class="box-container">
         <div class="box">
+          <img src="img/from-5-to-7.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/persona.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/rearwindow.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/in-the-mood-4-love.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/anatolia.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/812.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/blondes.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/breakfast-at-tiffanies.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/dune.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/la-la-land.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/life-is-beautiful.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/pride&prejudice.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/good-fellas.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/the-shining.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/mad-max.jpeg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/Everything_Everywhere_All_at_Once.jpg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/dr_strange.jpg" alt="movie">
+        </div>
+        <div class="box">
+          <img src="img/Iron_Man.jpg" alt="movie">
+        </div>
+      </div>
+    </section>
+
+     <!-- Review section start -->
+    <section class="review" id="review">
+      <h3 class="heading">Popular Reviews</h3>
+      <div class="box-container">
+        <div class="rev-box">
           <img src="img/guardians-galaxy.jpg" alt="reviewed movie">
            <p>Just when I thought I was out, they pull me back in</p>
             <img src="img/avtr-1.jpg" alt="user" class="user">
@@ -184,7 +244,7 @@
               <i class="fas fa-star-half-alt"></i>
             </div>
         </div>
-        <div class="box">
+        <div class="rev-box">
           <img src="img/jwck4.jpg" alt="reviewed movie">
           <p>how did he keep discreetly hopping country to country like mf do you not go through customs and immigration? I’m sure the Marquis has a connection there</p>
            <img src="img/avtr-2.jpg" alt="user" class="user">
@@ -196,7 +256,7 @@
              <i class="fas fa-star"></i>
            </div>
         </div>
-        <div class="box">
+        <div class="rev-box">
           <img src="img/the-popes.jpg" alt="reviewed movie">
           <p>Loved this! Russel Crowe was fantastic as usual.</p>
            <img src="img/avtr-3.jpg" alt="user" class="user">
@@ -210,7 +270,7 @@
            </div>
         </div>
 
-        <div class="box">
+        <div class="rev-box">
           <img src="img/mon-crime.jpg" alt="reviewed movie">
           <p>Madeleine qui passe de "je veux mourir" à "la vie est belle on va au ciné" après un sandwich ? She's just like me for real</p>
            <img src="img/avtr-4.jpg" alt="user" class="user">
@@ -225,6 +285,31 @@
       </div>
     </section>
     <!-- Review section end -->
+
+    <!-- Contact section start -->
+    <section class="contact" id="contact">
+      <h3 class="heading">Contact</h3>
+      <div class="form">
+      <form>
+        <h3>GET IN TOUCH</h3>
+        <div class="inputBox">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="name"/>
+        </div>
+        <div class="inputBox">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="mail"/>
+        </div>
+        <div class="inputBox">
+          <i class="fas fa-phone"></i>
+          <input type="number" placeholder="phone"/>
+        </div>
+        <input type="submit" class="btn" value="Contact now">
+      </form>
+    </div>
+    </section>
+
+    <!-- Contact section end -->
 
     <!-- Footer section start -->
     <section class="footer">
@@ -243,8 +328,8 @@
       <div class="links">
         <a href="#" class="active">Home</a>
         <a href="#">Sign in</a>
-        <a href="#">Create account</a>
         <a href="#">Films</a>
+        <a href="#">Reviews</a>
         <a href="#">Contact</a>
       </div>
       <div class="credit">

@@ -66,7 +66,7 @@ section{
     border-bottom:0.1rem solid #fff;
 }
 
-.review .heading{
+.movies .heading{
     text-align: start;
     color:#fff;
     text-transform: none; 
@@ -75,6 +75,22 @@ section{
     border-bottom:0.1rem solid #fff;
 }
 
+.review .heading{
+    text-align: start;
+    color:#fff;
+    text-transform: none; 
+    font-size:2rem;
+    margin-bottom:2rem;
+    border-bottom:0.1rem solid #fff;
+}
+.contact .heading{
+    text-align: start;
+    color:#fff;
+    text-transform: none; 
+    font-size:2rem;
+    margin-bottom:2rem;
+    border-bottom:0.1rem solid #fff;
+}
 .header .logo > img{
     height: 7rem;
 }
@@ -92,6 +108,7 @@ section{
    top:0;
    z-index: 1000;
 }
+
 .header .navbar a{
     margin:0 1rem;
     font-size: 1.6rem;
@@ -109,7 +126,14 @@ background-color: transparent;
 color:#fff ;
 }
 /*! header end */
-
+.box {
+    display: flex;
+  }
+  
+  .box img {
+    width: 100%; /* Ensures images fill the width of the container */
+    height: auto; /* Maintains aspect ratio */
+  }
 /*! Home start */
 .home .wrapper{
     position: absolute;
@@ -312,6 +336,7 @@ transform: translateX(-750px);
 }
 .movies-on-cinema .box-container .box img{
     width: 100%;
+    height:auto;
     object-fit: cover;
     border-radius: 3rem;
 }
@@ -330,42 +355,95 @@ transform: translateX(-750px);
     border-radius: 3rem;
 }
 /* -- Favorite movies section end */
-
+ /* -- Movies section start*/
+.movies .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.5rem;
+}
+.movies .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+/* Movies section end */
 /* review section start */
 .review .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
     gap: 1.5rem;
 }
-.review .box-container .box{
+.review .box-container .rev-box{
 border:var(--border);
 text-align: center;
 padding:3rem 2rem;
 background-color: azure;
 border-radius: 3rem;
 }
-.review .box-container .box img{
+.review .box-container .rev-box img{
     width: 100%;
     object-fit: cover;
 }
 
-.review .box-container .box p{
+.review .box-container .rev-box p{
     font-size: 1.5rem;
     line-height: 1.8;
     padding: 2rem 0;
 }
-.review .box-container .box .user{
+.review .box-container .rev-box .user{
 height: 7rem;
 width:7rem;
 border-radius: 50%;
 object-fit: cover;
 }
 
-.review .box-container .box .stars i{
+.review .box-container .rev-box .stars i{
 font-size: 2rem;
 color: yellow;
 }
 /* review section end */
+
+/* contact section start */
+.contact .form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    background-color: black;
+}
+.contact .form h3{
+    text-transform: uppercase;
+    font-size:3.5rem;
+    color:#fff;
+}
+.contact .form form .inputBox{
+    display: flex;
+    align-items: center;
+    margin:2rem 0;
+    border: var(--border);
+}
+.contact .form form .inputBox i{
+    color:#fff;
+    font-size: 2rem;
+    padding-left:2rem;
+}
+.contact .form form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background-color: transparent;
+}
+.contact .form form .btn {
+    color:#fff;
+    background-color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-left:2.5rem;
+}
+
+/* contact section end */
 
 /* footer section start */
 .footer{
