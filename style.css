@@ -163,13 +163,13 @@ height:490px;
     display: flex;
     justify-content: center;
 }
-.wrapper .icon-close{
+.home .wrapper .icon-close{
     position:absolute;
     top:0;
     right:0;
     width:4.5rem;
     height:4.5rem;
-    background: black;
+    background:black;
     font-size:2em;
     color:#fff;
     display: flex;
@@ -202,7 +202,6 @@ transform: translateX(-750px);
     font-size: 2em;
     color: rgb(0, 0, 0);
     align-items: center;
-
 }
 .input-box{
     position: relative;
